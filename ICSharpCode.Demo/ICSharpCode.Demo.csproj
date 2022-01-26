@@ -82,11 +82,6 @@
     </Compile>
     <Compile Include="WorkPanel\DemoWorkPanel.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="WorkPanel\DemoForm.resx">
-      <DependentUpon>DemoForm.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
   <Target Name="CopyResourceFolder" AfterTargets="Build">
     <ItemGroup>
       <SrcFolder Include="$(ProjectName).addin">
