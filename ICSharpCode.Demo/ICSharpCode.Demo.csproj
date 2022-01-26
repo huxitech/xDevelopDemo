@@ -44,6 +44,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\depends\Libraries\ICSharpCode.UI.dll</HintPath>
     </Reference>
+    <Reference Include="ICSharpCode.Motion, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\depends\Libraries\ICSharpCode.Motion.dll</HintPath>
+    </Reference>
     <Reference Include="SunnyUI, Version=3.0.9.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\depends\Libraries\SunnyUI.dll</HintPath>
@@ -77,6 +81,11 @@
       <DependentUpon>DemoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkPanel\DemoWorkPanel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="WorkPanel\DemoForm.resx">
+      <DependentUpon>DemoForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Target Name="CopyResourceFolder" AfterTargets="Build">
     <ItemGroup>
