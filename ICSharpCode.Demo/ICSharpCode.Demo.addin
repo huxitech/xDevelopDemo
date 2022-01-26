@@ -1,0 +1,28 @@
+<AddIn name        = "ICSharpCode.Demo"
+       author      = "Mike Krueger"
+       copyright   = "GPL"
+       url         = "http://www.icsharpcode.net"
+       description = "NCvs core module"
+       version     = "1.0.0">
+	   
+	<!--将程序集导入到框架中-->	
+	<Runtime>
+		<Import assembly="ICSharpCode.Demo.dll"/>
+	</Runtime>
+
+	<!--注册一个工作区-->
+	<Extension path = "/UI/WorkPanel">
+		<Class id = "DemoPage" 
+		       class = "ICSharpCode.Demo.DemoWorkPanel"
+		/>
+	</Extension>
+	
+	<!--注册一个步骤-->	
+	<Extension path = "/Follow/Steps">
+		<StepItem id = "DemoStep"
+			  class = "ICSharpCode.Demo.DemoStep"
+			  category = "Demo"
+			  stepname = "Demo步骤"	  
+			  />	   
+	</Extension>	
+</AddIn>
